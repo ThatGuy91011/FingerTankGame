@@ -17,6 +17,8 @@ public class BoxCollision : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(other.gameObject);
+        //Destroys anything outside of its boundaries
+            Destroy(other.gameObject);
+
     }
 }

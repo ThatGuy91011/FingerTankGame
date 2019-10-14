@@ -63,10 +63,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BoxCollision.cs" />
-    <Compile Include="Assets\Scripts\CollisionTest.cs" />
+    <Compile Include="Assets\Scripts\BulletMoving.cs" />
+    <Compile Include="Assets\Scripts\EnemyCollision.cs" />
     <Compile Include="Assets\Scripts\EnemyMoving.cs" />
-    <Compile Include="Assets\Scripts\Mover.cs" />
-    <Compile Include="Assets\Scripts\Shooting.cs" />
+    <Compile Include="Assets\Scripts\EnemyShipMoving.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\SpawningScript.cs" />
     <Compile Include="Assets\Scripts\TankControls.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/KIRWALLS/Desktop/TankGameFinal/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

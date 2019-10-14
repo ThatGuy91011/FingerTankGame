@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
-public class CollisionTest : MonoBehaviour
+public class EnemyCollision : MonoBehaviour
 {
     private Transform tf;
+
     // Start is called before the first frame update
     void Start()
     {
         tf = GetComponent<Transform>();
+        
     }
 
     // Update is called once per frame
@@ -18,11 +20,14 @@ public class CollisionTest : MonoBehaviour
 
     }
 
+    
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (tf.position.y < 13 && tf.position.y > -13 && tf.position.x < 13 && tf.position.x > -13)
+        //Only destroys the object if it is the player
+        if (other.gameObject.tag == "Player")
         {
             Destroy(other.gameObject);
         }
+        
     }
 }
